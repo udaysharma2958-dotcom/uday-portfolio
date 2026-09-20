@@ -1,63 +1,69 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Uday | Data Science</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UDAY — Data Science Portfolio</title>
 <style>
-:root{--ease:cubic-bezier(.2,.75,.2,1)}
-body{cursor:none}
-body:after{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.055),transparent 22%);z-index:1}
-.cursor{position:fixed;width:14px;height:14px;border:1px solid #fff;border-radius:50%;pointer-events:none;z-index:99;transform:translate(-50%,-50%);transition:width .2s,height .2s,background .2s}
-.cursor.big{width:45px;height:45px;background:rgba(255,255,255,.08)}
-.reveal{opacity:0;transform:translateY(35px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.reveal.show{opacity:1;transform:none}
-.hero .reveal:nth-child(1){transition-delay:.1s}.hero .reveal:nth-child(2){transition-delay:.25s}
-.hero:after{content:"SCROLL TO EXPLORE";position:absolute;right:7%;bottom:32px;color:#555;font-size:9px;letter-spacing:3px;writing-mode:vertical-rl;animation:pulse 2s infinite}
-@keyframes pulse{50%{opacity:.3}}
-.photo{transition:transform .8s var(--ease),filter .8s var(--ease)}
-.photo:hover{transform:scale(1.025) rotate(.5deg);filter:grayscale(0)}
-.card{position:relative;overflow:hidden}
-.card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:#fff;opacity:0;filter:blur(80px);left:var(--x,50%);top:var(--y,50%);transform:translate(-50%,-50%);transition:opacity .35s}
-.card:hover:before{opacity:.08}
-.skillbar{height:2px;background:#222;margin-top:20px;overflow:hidden}.skillbar i{display:block;height:100%;width:0;background:#eee;transition:width 1.2s var(--ease)}
-.show .skillbar i{width:var(--w)}
-@media(max-width:750px){body{cursor:auto}.cursor{display:none}.hero:after{display:none}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#070707;color:#eee;font-family:Arial,sans-serif}a{color:inherit;text-decoration:none}
-nav{position:fixed;z-index:5;top:0;width:100%;padding:22px 7%;display:flex;justify-content:space-between;background:linear-gradient(#070707,transparent)}nav b{font-size:22px}nav div{display:flex;gap:28px;color:#999;font-size:13px}nav a:hover{color:#fff}
-section{padding:110px 7%}.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.eyebrow{color:#888;letter-spacing:3px;font-size:11px;text-transform:uppercase}h1{font-size:clamp(60px,9vw,120px);line-height:.85;letter-spacing:-7px;margin:22px 0}.outline{color:transparent;-webkit-text-stroke:1px #ddd}.hero p{max-width:540px;color:#999;line-height:1.8}.btn{display:inline-block;border:1px solid #333;border-radius:30px;padding:14px 21px;margin:8px 5px 0 0;font-size:13px}.primary{background:#fff;color:#000;border-color:#fff}
-.photo{width:min(470px,100%);aspect-ratio:1;object-fit:cover;border-radius:22px;border:1px solid #222;display:block;margin:auto;box-shadow:0 30px 90px #000}.head{border-bottom:1px solid #222;padding-bottom:18px;margin-bottom:40px;display:flex;justify-content:space-between;align-items:end}.head h2{font-size:clamp(38px,6vw,70px);margin:0;letter-spacing:-4px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:70px}.big{font-size:clamp(28px,4vw,50px);line-height:1.1}.muted{color:#999;line-height:1.9}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.card{border:1px solid #222;border-radius:18px;padding:28px;background:linear-gradient(145deg,#121212,#090909);transition:.25s}.card:hover{transform:translateY(-5px);border-color:#555}.card h3{font-size:25px;margin:15px 0}.tag{font-size:10px;color:#777;letter-spacing:2px;text-transform:uppercase}.contact{text-align:center}.contact h2{font-size:clamp(50px,9vw,110px);line-height:.9;letter-spacing:-6px;margin:0}footer{border-top:1px solid #222;padding:25px 7%;color:#555;font-size:11px;display:flex;justify-content:space-between}
-@media(max-width:750px){nav div{display:none}.hero,.about{grid-template-columns:1fr}.hero{padding-top:130px}.photo{max-width:380px}.grid{grid-template-columns:1fr}h1{letter-spacing:-4px}section{padding:80px 6%}footer{gap:10px;flex-direction:column}}
-</style></head><body>
-<nav><b>UDAY.</b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
-<section class="hero"><div><div class="eyebrow">Data Science • Python • Analytics</div><h1>UDAY<br><span class="outline">SHARMA.</span></h1><p>Aspiring Data Scientist focused on Python, SQL, data analysis, visualization and machine learning.</p><a class="btn primary" href="#projects">View my work ↗</a><a class="btn" href="#contact">Let's talk</a></div><img class="photo" src="/uday.png" alt="Uday"></section>
-<section id="about"><div class="head"><h2>About</h2><small>01 / 04</small></div><div class="about"><div class="big reveal">Turning raw data into useful decisions.</div><div class="muted reveal">I’m learning how real companies use data to solve problems, measure performance and build intelligent products. My current toolkit covers Python, NumPy, Pandas, SQL, Excel, Power BI and Machine Learning.</div></div></section>
-<section id="skills"><div class="head"><h2>Skills</h2><small>02 / 04</small></div><div class="grid">
-<div class="card reveal"><h3>Python</h3><span class="tag">Core language</span><div class="skillbar"><i style="--w:88%"></i></div></div><div class="card reveal"><h3>SQL / MySQL</h3><span class="tag">Databases</span><div class="skillbar"><i style="--w:82%"></i></div></div><div class="card reveal"><h3>NumPy & Pandas</h3><span class="tag">Data analysis</span><div class="skillbar"><i style="--w:78%"></i></div></div><div class="card reveal"><h3>Excel & Power BI</h3><span class="tag">Visualization</span><div class="skillbar"><i style="--w:76%"></i></div></div><div class="card reveal"><h3>Machine Learning</h3><span class="tag">Models</span><div class="skillbar"><i style="--w:68%"></i></div></div><div class="card reveal"><h3>Data Visualization</h3><span class="tag">Insights</span><div class="skillbar"><i style="--w:74%"></i></div></div></div></section>
-<section id="projects"><div class="head"><h2>Projects</h2><small>03 / 04</small></div><div class="grid">
-<div class="card reveal"><span class="tag">Project 01</span><h3>Sales Dashboard</h3><p class="muted">Business dashboard for sales, revenue and performance trends.</p></div>
-<div class="card reveal"><span class="tag">Project 02</span><h3>Student Management</h3><p class="muted">Python OOP project with CRUD operations and calculations.</p></div>
-<div class="card reveal"><span class="tag">Project 03</span><h3>Data Analysis</h3><p class="muted">Dataset cleaning and exploration using Pandas and NumPy.</p></div>
-<div class="card reveal"><span class="tag">Project 04</span><h3>Machine Learning</h3><p class="muted">Space ready for your first trained ML model and results.</p></div></div></section>
-<section id="contact" class="contact"><div class="head"><h2>Let's connect</h2><small>04 / 04</small></div><h2>HAVE A<br><span class="outline">PROJECT?</span></h2><p class="muted">Find me on social media.</p><a class="btn primary" href="https://www.instagram.com/mr_uday_896_/" target="_blank">Instagram ↗</a><a class="btn" href="https://www.facebook.com/share/1buB1xCMwp/" target="_blank">Facebook ↗</a></section>
-<footer><span>© 2026 Uday Sharma</span><span>Built for Data Science</span></footer>
-<div class="cursor" id="cursor"></div>
-<script>
-const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
+:root{--bg:#080808;--fg:#f5f5f5;--muted:#999;--line:#292929}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}
+nav{position:fixed;z-index:50;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;padding:22px 5vw;background:linear-gradient(#080808ee,transparent);backdrop-filter:blur(8px)}
+.logo{font-weight:800;letter-spacing:-.05em}.navlinks{display:flex;gap:28px;font-size:11px;text-transform:uppercase;letter-spacing:.1em}.navlinks a{opacity:.7;transition:.25s}.navlinks a:hover{opacity:1}.talk{border:1px solid #555;border-radius:30px;padding:9px 14px;font-size:10px}
+.hero{height:250vh;position:relative}.hero-pin{position:sticky;top:0;height:100vh;overflow:hidden}
+.glow{position:absolute;width:58vw;height:58vw;right:-12vw;top:12vh;background:radial-gradient(circle,rgba(255,255,255,.13),transparent 62%);filter:blur(35px)}
+.hero-photo{position:absolute;z-index:2;right:5vw;top:10vh;width:min(43vw,560px);height:78vh;opacity:.88;mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 87%,transparent 100%);transition:transform .12s linear}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(.08) contrast(1.08)}
+.hero-copy{position:absolute;z-index:5;left:5vw;top:30vh;max-width:620px}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#999;margin-bottom:22px}
+.hero-title{font-size:clamp(60px,10vw,150px);line-height:.8;letter-spacing:-.075em;margin:0}.outline{color:transparent;-webkit-text-stroke:1px #eee}
+.hero-sub{color:#aaa;max-width:420px;line-height:1.65;font-size:14px;margin:30px 0}.btn{display:inline-block;border:1px solid #555;border-radius:30px;padding:12px 17px;font-size:11px;margin-right:7px;transition:.3s}.btn:hover{background:#fff;color:#000;border-color:#fff}
+.scroll{position:absolute;z-index:5;bottom:6vh;left:5vw;color:#777;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.scroll b{color:#fff}
+.section{border-top:1px solid var(--line);padding:130px 5vw}.inner{max-width:1180px;margin:auto}.kicker{font-size:10px;color:#777;letter-spacing:.2em;text-transform:uppercase}.big{font-size:clamp(48px,7vw,100px);letter-spacing:-.07em;line-height:.88;margin:18px 0 55px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about p{color:#aaa;font-size:15px;line-height:1.8}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{min-height:300px;border:1px solid #292929;border-radius:22px;padding:25px;background:linear-gradient(145deg,#141414,#0c0c0c);transition:.35s}.card:hover{transform:translateY(-9px);border-color:#666}.num{color:#666;font-size:10px}.card h3{font-size:27px;letter-spacing:-.05em;margin-top:80px;margin-bottom:12px}.card p{color:#999;font-size:13px;line-height:1.6}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.tag{font-size:9px;border:1px solid #333;padding:6px 9px;border-radius:20px;color:#aaa}
+.skills{max-width:800px}.skill{display:flex;justify-content:space-between;padding:17px 0;border-bottom:1px solid #292929;font-size:13px}.contact{text-align:center;padding-bottom:170px}.social{display:flex;justify-content:center;gap:10px}.social a{border:1px solid #444;border-radius:30px;padding:12px 18px;font-size:11px;transition:.3s}.social a:hover{background:#fff;color:#000}
+.reveal{opacity:0;transform:translateY(40px);transition:.8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.navlinks{display:none}.hero{height:220vh}.hero-photo{top:9vh;right:0;width:100vw;height:66vh;opacity:.66}.hero-copy{left:6vw;top:52vh;max-width:88vw}.hero-title{font-size:clamp(55px,16vw,100px)}.about{grid-template-columns:1fr;gap:20px}.cards{grid-template-columns:1fr}.section{padding:90px 6vw}}
+</style>
+</head>
+<body>
+<nav><div class="logo">UDAY.</div><div class="navlinks"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div><a class="talk" href="#contact">Let's talk</a></nav>
 
-const cursor=document.getElementById('cursor');
-window.addEventListener('mousemove',e=>{
-  document.documentElement.style.setProperty('--mx',e.clientX+'px');
-  document.documentElement.style.setProperty('--my',e.clientY+'px');
-  cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px';
-});
-document.querySelectorAll('a,.card,.photo').forEach(el=>{
-  el.addEventListener('mouseenter',()=>cursor.classList.add('big'));
-  el.addEventListener('mouseleave',()=>cursor.classList.remove('big'));
-});
-document.querySelectorAll('.card').forEach(card=>{
-  card.addEventListener('mousemove',e=>{
-    const r=card.getBoundingClientRect();
-    card.style.setProperty('--x',(e.clientX-r.left)+'px');
-    card.style.setProperty('--y',(e.clientY-r.top)+'px');
-  });
-});
+<section class="hero">
+<div class="hero-pin">
+<div class="glow"></div>
+<div class="hero-photo" id="photo"><img src="assets/uday.png" alt="Uday"></div>
+<div class="hero-copy">
+<div class="eyebrow">Data Science • Python • Analytics</div>
+<h1 class="hero-title" id="title">DATA<br><span class="outline">SCIENCE.</span></h1>
+<p class="hero-sub" id="sub">Turning data into useful insights with Python, SQL, analytics, visualization and machine learning.</p>
+<a class="btn" href="#work">View my work ↗</a><a class="btn" href="#contact">Let's talk</a>
+</div>
+<div class="scroll">↓ <b>Scroll</b> to explore</div>
+</div>
+</section>
+
+<section class="section" id="about"><div class="inner reveal"><div class="kicker">01 / About</div><div class="about"><div class="big">BUILD.<br>LEARN.<br>ANALYZE.</div><div><p>I'm Uday, an aspiring data scientist focused on practical data work and learning how real-world data becomes useful information.</p><p>Python, SQL, Pandas, NumPy, Excel, Power BI and machine learning are part of my toolkit.</p></div></div></div></section>
+
+<section class="section" id="work"><div class="inner"><div class="kicker reveal">02 / Selected work</div><div class="big reveal">FEATURED<br>PROJECTS.</div><div class="cards">
+<article class="card reveal"><div class="num">PROJECT 01</div><h3>Data Analysis</h3><p>Clean datasets, explore patterns and turn raw numbers into clear findings.</p><div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span></div></article>
+<article class="card reveal"><div class="num">PROJECT 02</div><h3>Analytics Dashboard</h3><p>Business-style reporting with KPIs, interactive visuals and useful summaries.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">SQL</span></div></article>
+<article class="card reveal"><div class="num">PROJECT 03</div><h3>Machine Learning</h3><p>Predictive workflows from preprocessing and feature work through evaluation.</p><div class="tags"><span class="tag">ML</span><span class="tag">Python</span><span class="tag">Scikit-learn</span></div></article>
+</div></div></section>
+
+<section class="section" id="skills"><div class="inner reveal"><div class="kicker">03 / Skills</div><div class="big">MY<br>TOOLKIT.</div><div class="skills">
+<div class="skill"><span>Python</span><span>01</span></div><div class="skill"><span>SQL / MySQL</span><span>02</span></div><div class="skill"><span>Pandas / NumPy</span><span>03</span></div><div class="skill"><span>Excel / Power BI</span><span>04</span></div><div class="skill"><span>Machine Learning</span><span>05</span></div>
+</div></div></section>
+
+<section class="section contact" id="contact"><div class="inner reveal"><div class="kicker">04 / Contact</div><div class="big">LET'S BUILD<br>SOMETHING.</div><div class="social"><a href="https://www.instagram.com/mr_uday_896_/" target="_blank">Instagram ↗</a><a href="https://www.facebook.com/share/1buB1xCMwp/" target="_blank">Facebook ↗</a></div></div></section>
+
+<script>
+const stories=[
+["DATA<br><span class='outline'>SCIENCE.</span>","Turning data into useful insights with Python, SQL, analytics, visualization and machine learning."],
+["PYTHON<br><span class='outline'>POWER.</span>","From raw data to clean, reproducible analysis and practical automation."],
+["SMART<br><span class='outline'>ANALYTICS.</span>","Finding patterns, building dashboards and making numbers easier to understand."],
+["MACHINE<br><span class='outline'>LEARNING.</span>","Learning predictive workflows from preprocessing to model evaluation."]
+];
+const title=document.getElementById('title'),sub=document.getElementById('sub'),photo=document.getElementById('photo');let last=-1;
+addEventListener('scroll',()=>{const hero=document.querySelector('.hero'),p=Math.max(0,Math.min(1,-hero.getBoundingClientRect().top/(hero.offsetHeight-innerHeight)));const i=Math.min(3,Math.floor(p*4));if(i!==last){last=i;title.innerHTML=stories[i][0];sub.textContent=stories[i][1];title.animate([{opacity:.2,transform:'translateY(20px)'},{opacity:1,transform:'translateY(0)'}],{duration:500,easing:'ease-out'});}photo.style.transform=`scale(${1+p*.10}) translateY(${-p*18}px)`;});
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
 </script>
 </body></html>
