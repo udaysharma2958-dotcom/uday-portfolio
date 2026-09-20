@@ -32,6 +32,22 @@ nav{position:fixed;z-index:50;inset:0 0 auto;display:flex;justify-content:space-
     100%{transform:rotateY(360deg);}
 }
 @media(max-width:800px){.navlinks{display:none}.hero{height:220vh}.hero-photo{top:9vh;right:0;width:100vw;height:66vh;opacity:.66}.hero-copy{left:6vw;top:52vh;max-width:88vw}.hero-title{font-size:clamp(55px,16vw,100px)}.about{grid-template-columns:1fr;gap:20px}.cards{grid-template-columns:1fr}.section{padding:90px 6vw}}
+.hero-photo {
+    transform-style: preserve-3d;
+    animation: photo3D 5s ease-in-out infinite;
+}
+
+@keyframes photo3D {
+    0% {
+        transform: perspective(1000px) rotateY(-8deg) rotateX(2deg);
+    }
+    50% {
+        transform: perspective(1000px) rotateY(8deg) rotateX(-2deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(-8deg) rotateX(2deg);
+    }
+}
 </style>
 </head>
 <body>
